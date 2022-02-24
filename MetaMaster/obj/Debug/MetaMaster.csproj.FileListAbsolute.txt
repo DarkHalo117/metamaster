@@ -82,3 +82,25 @@ D:\Users\Jon\Documents\Visual Studio 2019\MetaMaster\MetaMaster\obj\Debug\MetaMa
 D:\Users\Jon\Documents\Visual Studio 2019\MetaMaster\MetaMaster\obj\Debug\MetaMaster.csproj.CopyComplete
 D:\Users\Jon\Documents\Visual Studio 2019\MetaMaster\MetaMaster\obj\Debug\MetaMaster.exe
 D:\Users\Jon\Documents\Visual Studio 2019\MetaMaster\MetaMaster\obj\Debug\MetaMaster.pdb
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\MetaMaster.exe.config
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\MetaMaster.exe
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\MetaMaster.pdb
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\Newtonsoft.Json.dll
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\System.Management.Automation.dll
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\System.Net.Http.Formatting.dll
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\Microsoft.Management.Infrastructure.dll
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\Newtonsoft.Json.xml
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\System.Management.Automation.xml
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\bin\Debug\System.Net.Http.Formatting.xml
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.csproj.AssemblyReference.cache
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.computerEvaluationForm.resources
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.Form1.resources
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.Properties.Resources.resources
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.QualityControl.resources
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.scaffoldCreds.resources
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.SkookumChoocher.resources
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.csproj.GenerateResource.cache
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.csproj.CoreCompileInputs.cache
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.csproj.CopyComplete
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.exe
+D:\Users\Jon\Documents\GitHub\metamaster\MetaMaster\obj\Debug\MetaMaster.pdb

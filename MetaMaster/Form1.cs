@@ -1697,5 +1697,23 @@ namespace MetaMaster
             SkookumChoocher meta = new SkookumChoocher();
             meta.Show();
         }
+
+        private void dISMCleanUpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string applicationDir = "misc";
+            string applicationName = "Fixes.7z";
+            toolStripStatusLabel1.Text = "Extracting...";
+            statusStrip1.Update();
+            logic.extractApplication(applicationName, applicationDir);
+            toolStripStatusLabel1.Text = "Extract Successful!";
+            statusStrip1.Update();
+            //string executionCMD = logic.tools + "\\" + applicationDir + "\\HDD Health\\gsmartcontrol.exe";
+            string executionCMD = logic.tools + "\\" + applicationDir + "\\Win_10_DISM_clean.cmd";
+            System.Diagnostics.Process.Start(executionCMD);
+            systemGridView.Rows.Add("Task:");
+            systemGridView.Rows.Add(applicationName, executionCMD, logic.timestamp());
+            toolStripStatusLabel1.Text = "Launching: Win_10_DISM_clean.cmd";
+            statusStrip1.Update();
+        }
     }
 }

@@ -124,6 +124,7 @@ namespace MetaMaster
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.scaffold = new System.Windows.Forms.Button();
+            this.dISMCleanUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -278,21 +279,21 @@ namespace MetaMaster
             // installESETToolStripMenuItem
             // 
             this.installESETToolStripMenuItem.Name = "installESETToolStripMenuItem";
-            this.installESETToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.installESETToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.installESETToolStripMenuItem.Text = "Install WebRoot";
             this.installESETToolStripMenuItem.Click += new System.EventHandler(this.installESETToolStripMenuItem_Click);
             // 
             // installSASToolStripMenuItem
             // 
             this.installSASToolStripMenuItem.Name = "installSASToolStripMenuItem";
-            this.installSASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.installSASToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.installSASToolStripMenuItem.Text = "Install SAS";
             this.installSASToolStripMenuItem.Click += new System.EventHandler(this.installSASToolStripMenuItem_Click);
             // 
             // installSEBToolStripMenuItem
             // 
             this.installSEBToolStripMenuItem.Name = "installSEBToolStripMenuItem";
-            this.installSEBToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.installSEBToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.installSEBToolStripMenuItem.Text = "Install SEB";
             this.installSEBToolStripMenuItem.Click += new System.EventHandler(this.installSEBToolStripMenuItem_Click);
             // 
@@ -776,9 +777,11 @@ namespace MetaMaster
             // 
             // diagnosticsToolStripMenuItem
             // 
+            this.diagnosticsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dISMCleanUpToolStripMenuItem});
             this.diagnosticsToolStripMenuItem.Name = "diagnosticsToolStripMenuItem";
             this.diagnosticsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.diagnosticsToolStripMenuItem.Text = "Diagnostics";
+            this.diagnosticsToolStripMenuItem.Text = "Fixes";
             // 
             // tuneUpToolStripMenuItem
             // 
@@ -790,7 +793,7 @@ namespace MetaMaster
             // 
             this.qCToolStripMenuItem1.Name = "qCToolStripMenuItem1";
             this.qCToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.qCToolStripMenuItem1.Text = "QC";
+            this.qCToolStripMenuItem1.Text = "Staging (QC)";
             this.qCToolStripMenuItem1.Click += new System.EventHandler(this.qCToolStripMenuItem1_Click);
             // 
             // quitToolStripMenuItem
@@ -835,7 +838,7 @@ namespace MetaMaster
             // aboutThisToolToolStripMenuItem
             // 
             this.aboutThisToolToolStripMenuItem.Name = "aboutThisToolToolStripMenuItem";
-            this.aboutThisToolToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutThisToolToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.aboutThisToolToolStripMenuItem.Text = "About this tool";
             this.aboutThisToolToolStripMenuItem.Click += new System.EventHandler(this.aboutThisToolToolStripMenuItem_Click);
             // 
@@ -888,6 +891,13 @@ namespace MetaMaster
             this.scaffold.Text = "Scaffold";
             this.scaffold.UseVisualStyleBackColor = true;
             this.scaffold.Click += new System.EventHandler(this.scaffold_Click);
+            // 
+            // dISMCleanUpToolStripMenuItem
+            // 
+            this.dISMCleanUpToolStripMenuItem.Name = "dISMCleanUpToolStripMenuItem";
+            this.dISMCleanUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dISMCleanUpToolStripMenuItem.Text = "DISM Clean Up";
+            this.dISMCleanUpToolStripMenuItem.Click += new System.EventHandler(this.dISMCleanUpToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -1010,6 +1020,7 @@ namespace MetaMaster
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button scaffold;
+        private System.Windows.Forms.ToolStripMenuItem dISMCleanUpToolStripMenuItem;
     }
 }
 
