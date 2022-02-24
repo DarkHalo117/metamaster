@@ -1,0 +1,680 @@
+
+
+Thu Jan  6 17:33:11 2022
+Command line: TestDisk
+
+TestDisk 7.1-WIP, Data Recovery Utility, August 2016
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Windows 8 (9200)
+Compiler: GCC 5.4, Cygwin32 2005.2
+ext2fs lib: 1.43.1, ntfs lib: 10:0:0, reiserfs lib: none, ewf lib: 20140608, curses lib: ncurses 6.0
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(/dev/sda)=1000204886016
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(/dev/sdb)=2000398934016
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(/dev/sdc)=500106780160
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(\\.\PhysicalDrive0)=1000204886016
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(\\.\PhysicalDrive1)=2000398934016
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(\\.\PhysicalDrive2)=500106780160
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(\\.\C:)=999546739712
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(\\.\D:)=2000397795328
+disk_get_size_win32 IOCTL_DISK_GET_LENGTH_INFO(\\.\E:)=500105217024
+filewin32_getfilesize(\\.\G:) GetFileSize err Incorrect function.
+
+filewin32_setfilepointer(\\.\G:) SetFilePointer err Incorrect function.
+
+Warning: can't get size for \\.\G:
+Hard disk list
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - Samsung SSD 970 EVO Plus 1TB, S/N:0025_3855_91B2_9AB4., FW:1B2QEXM7
+Disk /dev/sdb - 2000 GB / 1863 GiB - CHS 243201 255 63, sector size=512 - WDC WD2003FZEX-00SRLA0, S/N:WD-WCC6N2XET375, FW:01.01A01
+Disk /dev/sdc - 500 GB / 465 GiB - CHS 60801 255 63, sector size=512 - Generic External, S/N:WD-WCASU0734616, FW:1.04
+
+Partition table type (auto): Intel
+Disk /dev/sdc - 500 GB / 465 GiB - Generic External
+Partition table type: Intel
+
+Analyse Disk /dev/sdc - 500 GB / 465 GiB - CHS 60801 255 63
+Geometry from i386 MBR: head=255 sector=63
+NTFS at 0/1/1
+get_geometry_from_list_part_aux head=255 nbr=2
+get_geometry_from_list_part_aux head=8 nbr=1
+get_geometry_from_list_part_aux head=16 nbr=1
+get_geometry_from_list_part_aux head=32 nbr=1
+get_geometry_from_list_part_aux head=64 nbr=1
+get_geometry_from_list_part_aux head=128 nbr=1
+get_geometry_from_list_part_aux head=240 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=2
+Current partition structure:
+ 1 * HPFS - NTFS              0   1  1 60800 254 63  976768002
+
+search_part()
+Disk /dev/sdc - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/1/1
+filesystem size           976768002
+sectors_per_cluster       8
+mft_lcn                   4
+mftmirr_lcn               61048000
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0   1  1 60800 254 63  976768002
+     NTFS, blocksize=4096, 500 GB / 465 GiB
+file_pread(6,2,buffer,976771071(60801/47/46)) lseek err Invalid argument
+file_pread(6,1,buffer,976771071(60801/47/46)) lseek err Invalid argument
+file_pread(6,2,buffer,976771072(60801/47/47)) lseek err Invalid argument
+file_pread(6,14,buffer,976771074(60801/47/49)) lseek err Invalid argument
+file_pread(6,1,buffer,976771074(60801/47/49)) lseek err Invalid argument
+file_pread(6,8,buffer,976771080(60801/47/55)) lseek err Invalid argument
+file_pread(6,3,buffer,976771088(60801/47/63)) lseek err Invalid argument
+file_pread(6,3,buffer,976771135(60801/48/47)) lseek err Invalid argument
+file_pread(6,8,buffer,976771151(60801/48/63)) lseek err Invalid argument
+file_pread(6,11,buffer,976771198(60801/49/47)) lseek err Invalid argument
+file_pread(6,2,buffer,976773120(60801/80/16)) lseek err Invalid argument
+get_geometry_from_list_part_aux head=255 nbr=2
+get_geometry_from_list_part_aux head=8 nbr=1
+get_geometry_from_list_part_aux head=16 nbr=1
+get_geometry_from_list_part_aux head=32 nbr=1
+get_geometry_from_list_part_aux head=64 nbr=1
+get_geometry_from_list_part_aux head=128 nbr=1
+get_geometry_from_list_part_aux head=240 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=2
+
+Results
+   * HPFS - NTFS              0   1  1 60800 254 63  976768002
+     NTFS, blocksize=4096, 500 GB / 465 GiB
+
+
+dir_partition inode=5
+   * HPFS - NTFS              0   1  1 60800 254 63  976768002
+     NTFS, blocksize=4096, 500 GB / 465 GiB
+Directory /
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 .
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 ..
+   82628 dr-xr-xr-x     0      0         0 24-Jun-2011 12:11 $AVG
+      37 dr-xr-xr-x     0      0         0  5-Jun-2019 21:07 $RECYCLE.BIN
+   20487 dr-xr-xr-x     0      0         0  2-Mar-2013 19:21 .Trash-1000
+  159583 dr-xr-xr-x     0      0         0  2-Mar-2012 20:39 10_1_10 LAN Party
+    6473 dr-xr-xr-x     0      0         0 25-Aug-2010 14:04 6acecaa05f35f6819e6a94
+   97913 dr-xr-xr-x     0      0         0 28-Jul-2016 02:20 8f2794f695b1d46591a617e4787605d0
+   90513 dr-xr-xr-x     0      0         0  2-Mar-2012 20:39 AgentSheets
+  167462 dr-xr-xr-x     0      0         0 13-Jan-2014 18:17 Backups
+    4661 dr-xr-xr-x     0      0         0 29-Mar-2012 13:49 Development
+    7491 dr-xr-xr-x     0      0         0 17-Nov-2011 22:26 Digidesign Databases
+    7041 dr-xr-xr-x     0      0         0  9-Feb-2013 21:31 Downloads
+  167122 dr-xr-xr-x     0      0         0 19-Feb-2011 22:45 Drivers
+     327 dr-xr-xr-x     0      0         0  8-Dec-2015 20:53 FL8
+      40 dr-xr-xr-x     0      0         0 16-May-2012 18:00 Game
+   11886 dr-xr-xr-x     0      0         0  7-Dec-2015 22:52 Games
+     359 dr-xr-xr-x     0      0         0 12-Jan-2011 16:54 Home Videos
+     328 dr-xr-xr-x     0      0         0 11-May-2013 03:02 Movies
+   90823 dr-xr-xr-x     0      0         0 19-Aug-2013 03:20 Music
+     307 dr-xr-xr-x     0      0         0  7-Dec-2015 22:46 Programs
+    6531 dr-xr-xr-x     0      0         0 12-Sep-2010 21:05 RECYCLER
+   90788 dr-xr-xr-x     0      0         0  3-Feb-2012 19:56 RPG
+      35 dr-xr-xr-x     0      0         0  5-Jun-2019 20:59 System Volume Information
+   22734 dr-xr-xr-x     0      0         0 28-Dec-2012 18:13 Temp
+   90808 dr-xr-xr-x     0      0         0  7-Jan-2012 10:11 Videos
+  223735 dr-xr-xr-x     0      0         0 18-Aug-2011 10:18 msdownld.tmp
+     351 -r--r--r--     0      0       989  3-Oct-2011 22:29 Darthvader.png
+     351 -r--r--r--     0      0        26  3-Oct-2011 22:29 Darthvader.png:Zone.Identifier
+   90410 -r--r--r--     0      0       700 15-Jan-2012 00:40 Development - Shortcut.lnk
+    4011 -r--r--r--     0      0   4199240 11-May-2012 22:33 MotioninJoy_071001_signed.exe
+    4011 -r--r--r--     0      0        26 11-May-2012 22:33 MotioninJoy_071001_signed.exe:Zone.Identifier
+   15762 -r--r--r--     0      0     46080 11-Apr-2012 15:05 Thumbs.db
+   15762 -r--r--r--     0      0         0 11-Apr-2012 15:05 Thumbs.db:encryptable
+   90754 -r--r--r--     0      0    602447 25-Oct-2010 11:46 UM-2_win_vista.zip
+   90754 -r--r--r--     0      0        24 25-Oct-2010 11:46 UM-2_win_vista.zip:Zone.Identifier
+    4715 -r--r--r--     0      0      2720 12-Jul-2010 20:48 UserPreferences.ini
+    4716 -r--r--r--     0      0     16091 12-Jul-2010 20:48 ddo.keymap
+  159733 -r--r--r--     0      0   1348608 16-Dec-2010 02:42 ehthumbs_vista.db
+  159733 -r--r--r--     0      0         0 16-Dec-2010 02:42 ehthumbs_vista.db:encryptable
+   90756 -r--r--r--     0      0   3375944 13-Oct-2010 13:38 en_windows_phone_developer_tools.exe
+   90756 -r--r--r--     0      0        24 13-Oct-2010 13:38 en_windows_phone_developer_tools.exe:Zone.Identifier
+  160034 -r--r--r--     0      0  13166186 16-Jan-2011 16:19 lowMailbox.ase
+   20357 -r--r--r--     0      0    904704  1-Dec-2006 23:37 msdia80.dll
+   90366 -r--r--r--     0      0     21791 10-Oct-2010 05:22 pPipeShape1.ase
+  160048 -r--r--r--     0      0    359613 16-Jan-2011 18:52 pSphere1Shape.ase
+   90367 -r--r--r--     0      0     21789 10-Oct-2010 05:22 ramp90plus.ase
+   15809 -r--r--r--     0      0     69632 18-Mar-2012 23:30 t670
+
+dir_partition inode=328
+   * HPFS - NTFS              0   1  1 60800 254 63  976768002
+     NTFS, blocksize=4096, 500 GB / 465 GiB
+Directory /Movies
+     328 dr-xr-xr-x     0      0         0 11-May-2013 03:02 .
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 ..
+  228217 -r--r--r--     0      0    385536 20-Dec-2012 18:29 Thumbs.db
+  228217 -r--r--r--     0      0         0 20-Dec-2012 18:29 Thumbs.db:encryptable
+  159734 -r--r--r--     0      0    568832 16-Dec-2010 02:42 ehthumbs_vista.db
+  159734 -r--r--r--     0      0         0 16-Dec-2010 02:42 ehthumbs_vista.db:encryptable
+Directory /
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 .
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 ..
+   82628 dr-xr-xr-x     0      0         0 24-Jun-2011 12:11 $AVG
+      37 dr-xr-xr-x     0      0         0  5-Jun-2019 21:07 $RECYCLE.BIN
+   20487 dr-xr-xr-x     0      0         0  2-Mar-2013 19:21 .Trash-1000
+  159583 dr-xr-xr-x     0      0         0  2-Mar-2012 20:39 10_1_10 LAN Party
+    6473 dr-xr-xr-x     0      0         0 25-Aug-2010 14:04 6acecaa05f35f6819e6a94
+   97913 dr-xr-xr-x     0      0         0 28-Jul-2016 02:20 8f2794f695b1d46591a617e4787605d0
+   90513 dr-xr-xr-x     0      0         0  2-Mar-2012 20:39 AgentSheets
+  167462 dr-xr-xr-x     0      0         0 13-Jan-2014 18:17 Backups
+    4661 dr-xr-xr-x     0      0         0 29-Mar-2012 13:49 Development
+    7491 dr-xr-xr-x     0      0         0 17-Nov-2011 22:26 Digidesign Databases
+    7041 dr-xr-xr-x     0      0         0  9-Feb-2013 21:31 Downloads
+  167122 dr-xr-xr-x     0      0         0 19-Feb-2011 22:45 Drivers
+     327 dr-xr-xr-x     0      0         0  8-Dec-2015 20:53 FL8
+      40 dr-xr-xr-x     0      0         0 16-May-2012 18:00 Game
+   11886 dr-xr-xr-x     0      0         0  7-Dec-2015 22:52 Games
+     359 dr-xr-xr-x     0      0         0 12-Jan-2011 16:54 Home Videos
+     328 dr-xr-xr-x     0      0         0 11-May-2013 03:02 Movies
+   90823 dr-xr-xr-x     0      0         0 19-Aug-2013 03:20 Music
+     307 dr-xr-xr-x     0      0         0  7-Dec-2015 22:46 Programs
+    6531 dr-xr-xr-x     0      0         0 12-Sep-2010 21:05 RECYCLER
+   90788 dr-xr-xr-x     0      0         0  3-Feb-2012 19:56 RPG
+      35 dr-xr-xr-x     0      0         0  5-Jun-2019 20:59 System Volume Information
+   22734 dr-xr-xr-x     0      0         0 28-Dec-2012 18:13 Temp
+   90808 dr-xr-xr-x     0      0         0  7-Jan-2012 10:11 Videos
+  223735 dr-xr-xr-x     0      0         0 18-Aug-2011 10:18 msdownld.tmp
+     351 -r--r--r--     0      0       989  3-Oct-2011 22:29 Darthvader.png
+     351 -r--r--r--     0      0        26  3-Oct-2011 22:29 Darthvader.png:Zone.Identifier
+   90410 -r--r--r--     0      0       700 15-Jan-2012 00:40 Development - Shortcut.lnk
+    4011 -r--r--r--     0      0   4199240 11-May-2012 22:33 MotioninJoy_071001_signed.exe
+    4011 -r--r--r--     0      0        26 11-May-2012 22:33 MotioninJoy_071001_signed.exe:Zone.Identifier
+   15762 -r--r--r--     0      0     46080 11-Apr-2012 15:05 Thumbs.db
+   15762 -r--r--r--     0      0         0 11-Apr-2012 15:05 Thumbs.db:encryptable
+   90754 -r--r--r--     0      0    602447 25-Oct-2010 11:46 UM-2_win_vista.zip
+   90754 -r--r--r--     0      0        24 25-Oct-2010 11:46 UM-2_win_vista.zip:Zone.Identifier
+    4715 -r--r--r--     0      0      2720 12-Jul-2010 20:48 UserPreferences.ini
+    4716 -r--r--r--     0      0     16091 12-Jul-2010 20:48 ddo.keymap
+  159733 -r--r--r--     0      0   1348608 16-Dec-2010 02:42 ehthumbs_vista.db
+  159733 -r--r--r--     0      0         0 16-Dec-2010 02:42 ehthumbs_vista.db:encryptable
+   90756 -r--r--r--     0      0   3375944 13-Oct-2010 13:38 en_windows_phone_developer_tools.exe
+   90756 -r--r--r--     0      0        24 13-Oct-2010 13:38 en_windows_phone_developer_tools.exe:Zone.Identifier
+  160034 -r--r--r--     0      0  13166186 16-Jan-2011 16:19 lowMailbox.ase
+   20357 -r--r--r--     0      0    904704  1-Dec-2006 23:37 msdia80.dll
+   90366 -r--r--r--     0      0     21791 10-Oct-2010 05:22 pPipeShape1.ase
+  160048 -r--r--r--     0      0    359613 16-Jan-2011 18:52 pSphere1Shape.ase
+   90367 -r--r--r--     0      0     21789 10-Oct-2010 05:22 ramp90plus.ase
+   15809 -r--r--r--     0      0     69632 18-Mar-2012 23:30 t670
+
+dir_partition inode=90823
+   * HPFS - NTFS              0   1  1 60800 254 63  976768002
+     NTFS, blocksize=4096, 500 GB / 465 GiB
+Directory /Music
+   90823 dr-xr-xr-x     0      0         0 19-Aug-2013 03:20 .
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 ..
+   11776 dr-xr-xr-x     0      0         0 19-Aug-2013 00:12 100 Top Techno Productions 2011 Deluxe Edition (2011) [WwW.ZoNaTorrent.CoM]
+   90381 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 2 Best Enemies
+  159896 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 2 Vibez
+  159901 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 3OH!3
+  160268 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 4 Strings
+   82683 dr-xr-xr-x     0      0         0 26-Jun-2011 03:30 A Perfect Circle
+  160278 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 Accuface
+  160324 dr-xr-xr-x     0      0         0 20-Jan-2011 22:22 Akon
+  160327 dr-xr-xr-x     0      0         0 20-Jan-2011 22:22 Al Storm
+  160330 dr-xr-xr-x     0      0         0 20-Jan-2011 22:22 Ali Payami Vs Aquagen Feat War
+  160259 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Andrew Spencer Vs. Lazard
+  160256 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Andrew Spencer meets Blue Natu
+  227909 dr-xr-xr-x     0      0         0  7-Jan-2012 10:10 Angelo
+  160262 dr-xr-xr-x     0      0         0 16-Jan-2012 15:10 Asking Alexandria
+  160347 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Aspyr Feat Jessica
+   82694 dr-xr-xr-x     0      0         0 26-Jun-2011 03:30 Avenged Sevenfold
+  160350 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Bangbros
+  160383 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Basspolice
+   82710 dr-xr-xr-x     0      0         0 26-Jun-2011 03:31 Beardyman
+  160386 dr-xr-xr-x     0      0         0  3-Jul-2011 14:02 Benny Benassi
+  160431 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Blutonium Boy
+  160434 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Bonnie Tyler
+   82719 dr-xr-xr-x     0      0         0  9-Feb-2012 01:30 Brandon Sanderson and Robert Jordan
+  160443 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Brooklyn Bounce
+  160448 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Bruno Power
+   13883 dr-xr-xr-x     0      0         0 16-Jan-2012 15:04 Bullet for My Valentine
+  160477 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Cascada
+    4637 dr-xr-xr-x     0      0         0 19-Aug-2013 00:16 Chase and Status
+  160492 dr-xr-xr-x     0      0         0 16-Jan-2012 15:10 Chevelle
+    6859 dr-xr-xr-x     0      0         0 28-Aug-2011 16:07 Chevelle Discography
+   13886 dr-xr-xr-x     0      0         0 16-Jan-2012 15:04 Coheed & Cambria
+  160506 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Cosmic Dancer
+  160608 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Frankie Jones vs. Blue Amazon
+  160611 dr-xr-xr-x     0      0         0 26-Jun-2011 03:41 DJ Kramer
+  160619 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Lawless and Hypeman
+  160622 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Roberto K
+  160625 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Sequenza
+  160628 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Splash
+  160631 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Stardust
+  160634 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Steni
+   14007 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 DJ Tiësto
+  160644 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Yanny
+   81065 dr-xr-xr-x     0      0         0 17-Dec-2014 23:01 DRM Dumpster Folder
+  160509 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Da Tweekaz
+    7025 dr-xr-xr-x     0      0         0  2-Sep-2011 16:40 Da kennedy
+  160519 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dan Winter
+  160522 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Darren Styles vs Ultrabeat
+  160525 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dave Mccullen
+   13909 dr-xr-xr-x     0      0         0 16-Jan-2012 15:04 Deadmau5
+  160596 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dickheadz
+   13939 dr-xr-xr-x     0      0         0 16-Jan-2012 15:04 Disturbed
+  160605 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dj Cargo & D-Verse
+     471 dr-xr-xr-x     0      0         0  6-May-2011 11:55 Doctor P
+   14044 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Dope
+  160656 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dr. Dre
+  160672 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dream Dance Alliance
+  160675 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Drop Kickz
+   14053 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Drowning Pool
+  222078 dr-xr-xr-x     0      0         0 19-Aug-2013 03:36 Dubstep Soundcloud
+  160678 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Earthshakers
+   14082 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Eminem
+   14162 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Eminem-Recovery-(Retail)-2010-[NoFS]
+  160748 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Empyre One
+   15975 dr-xr-xr-x     0      0         0  9-Feb-2012 01:33 Enders Saga
+  160759 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 EuroDancer
+   14193 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Fair to Midland
+   82619 dr-xr-xr-x     0      0         0  7-Jan-2012 10:10 Feed Me
+  160771 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Feeldii and Kez
+   14217 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Godsmack
+  160774 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Grey T
+  160777 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Happytunez!
+   14258 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Hinder
+  160780 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Impact & Resist Feat Lisa Abbo
+    6513 dr-xr-xr-x     0      0         0 27-Sep-2013 16:37 Infected Mushroom
+    6927 dr-xr-xr-x     0      0         0 19-Aug-2013 02:13 Infected Mushroom - Legend Of The Black Shawarma
+  160940 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Jan Van Bass
+  160962 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Jessi Fanuele
+  160972 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Jixaw Ft DJ Gigadance
+  160975 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Jumper
+   14270 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Justin Timberlake
+  161039 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 K-Traxx
+  161003 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 KLM Music
+  160978 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Kanye West
+  161000 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Klimazz Viola Me
+  161006 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Klone
+   14283 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Korn
+   14348 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 LMFAO
+  161042 dr-xr-xr-x     0      0         0 16-Jan-2012 15:11 Lady Gaga
+   14338 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Lil Wayne
+  161064 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Liz Kay
+  161067 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Liz Meyer
+   14366 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Ludacris
+  161090 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Manian
+  159973 dr-xr-xr-x     0      0         0 21-Jan-2011 00:21 Metallica
+   14389 dr-xr-xr-x     0      0         0 16-Jan-2012 15:06 Michael Jackson
+  161104 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Mike Nero
+  161107 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Miss Destiny
+    4501 dr-xr-xr-x     0      0         0  7-Jan-2012 10:10 Music
+  161111 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 MxPx
+  161114 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Natascha Thomas
+  161117 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 NiSsie Inc
+  161120 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Nitra-M
+  161123 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Northern Inc
+  161126 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Novaspace
+   15763 dr-xr-xr-x     0      0         0  5-Feb-2012 14:51 Onnyx
+  161129 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Orange Clubbers
+   14458 dr-xr-xr-x     0      0         0 16-Jan-2012 15:06 Ozzy Osbourne
+   14466 dr-xr-xr-x     0      0         0 16-Jan-2012 15:06 Papa Roach
+  161132 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Paul EP And Smithy
+  161135 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 PeaK Inc
+     559 dr-xr-xr-x     0      0         0 27-Aug-2013 04:01 Pendulum
+  161138 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Platnum
+  159815 dr-xr-xr-x     0      0         0  2-Dec-2012 12:16 Playlists
+  161148 dr-xr-xr-x     0      0         0 27-Jan-2011 00:57 Podcasts
+  161170 dr-xr-xr-x     0      0         0 20-Jan-2011 23:18 Project Zero
+  159730 dr-xr-xr-x     0      0         0 21-Jan-2011 00:21 Puscifer
+  161176 dr-xr-xr-x     0      0         0 20-Jan-2011 23:18 Raveboy
+  161179 dr-xr-xr-x     0      0         0 20-Jan-2011 23:18 Revolution
+  161182 dr-xr-xr-x     0      0         0 26-Jun-2011 03:42 Robert Jordan
+    6933 dr-xr-xr-x     0      0         0 28-Aug-2011 16:15 Rosetta Stone German 1-5
+     352 dr-xr-xr-x     0      0         0  7-Jan-2012 10:10 Rusko
+  161476 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 SL-Tronic
+  161256 dr-xr-xr-x     0      0         0 20-Jan-2011 23:19 Secondtunez
+    6934 dr-xr-xr-x     0      0         0 19-Aug-2013 02:59 Serj Tankian - Elect The Dead
+    6784 dr-xr-xr-x     0      0         0 19-Aug-2013 00:13 Serj Tankian - Imperfect Harmonies [2010] [320kbps]
+    4650 dr-xr-xr-x     0      0         0 16-Jan-2012 15:11 Skrillex
+   14487 dr-xr-xr-x     0      0         0 16-Jan-2012 15:06 Skrillex - Scary Monsters and Nice Sprites [FLAC _ MP3]
+   14512 dr-xr-xr-x     0      0         0 16-Jan-2012 15:07 Slipknot
+   14601 dr-xr-xr-x     0      0         0 16-Jan-2012 15:07 Slipknot - 2010 - Greatest Hits
+  161479 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Soundtrack
+  161510 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Special D
+   14663 dr-xr-xr-x     0      0         0 16-Jan-2012 15:07 Staind
+  161526 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Star Pilots
+  161529 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Stu Allan Ft Vicky Fee
+  161532 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Styles and Breeze
+  159807 dr-xr-xr-x     0      0         0 11-Jul-2011 21:45 Subscription
+   14760 dr-xr-xr-x     0      0         0 16-Jan-2012 15:07 Sum 41
+  161647 dr-xr-xr-x     0      0         0 20-Jan-2011 23:21 Sunrider
+  161650 dr-xr-xr-x     0      0         0 20-Jan-2011 23:21 Sy And Unknown Vs. Grant Pater
+  161653 dr-xr-xr-x     0      0         0 20-Jan-2011 23:21 Sylwania
+  161656 dr-xr-xr-x     0      0         0 20-Jan-2011 23:21 System F
+   14773 dr-xr-xr-x     0      0         0 16-Jan-2012 15:08 System of a Down
+  161841 dr-xr-xr-x     0      0         0 20-Jan-2011 23:22 Szhabbe
+   15112 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 Tech N9ne
+   82993 dr-xr-xr-x     0      0         0 16-Jan-2012 15:11 Tech N9ne - All 6's and 7's [2011] [Retail] 320kbps
+    4723 dr-xr-xr-x     0      0         0 19-Aug-2013 03:03 Tech N9ne Collabos - The Gates Mixed Plate [2010]
+  161922 dr-xr-xr-x     0      0         0 20-Jan-2011 23:22 Techno
+  162011 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Technoboy
+  162014 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Technoboy feat. Shayla
+  162017 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Teddybeer
+   15212 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 Tenacious D
+  162079 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 The All - American Rejects
+   15217 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 The Black Eyed Peas
+   15227 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 The Bloody Beetroots
+  162103 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 The Boyscouts
+  162106 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 The Hose
+    6797 dr-xr-xr-x     0      0         0  4-Sep-2011 18:49 The Matrix Soundtrack [First, Second & Third]
+   15248 dr-xr-xr-x     0      0         0 23-Oct-2012 16:46 This is Dubstep 2011
+  162115 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Thomas Veex & Kilazz
+   90824 dr-xr-xr-x     0      0         0 16-Nov-2010 12:13 Tool - Discography
+   85062 dr-xr-xr-x     0      0         0 28-Jun-2011 18:25 UKF Dubstep
+   15289 dr-xr-xr-x     0      0         0 11-Nov-2012 14:35 UKF_ Bass Culture
+  162145 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Ultrabeat
+  159754 dr-xr-xr-x     0      0         0 16-Jan-2012 15:12 Unknown Artist
+    6848 dr-xr-xr-x     0      0         0 16-Jan-2012 15:12 VA - DMC Dance Mixes 39 (2011)@320(BSBT-RG)
+   15325 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 Various Artists
+  162252 dr-xr-xr-x     0      0         0 20-Jan-2011 23:24 Vids
+  162255 dr-xr-xr-x     0      0         0 20-Jan-2011 23:24 Wavetune
+   82639 dr-xr-xr-x     0      0         0 26-Jun-2011 03:30 Winamp MP3 Bundle
+  162278 dr-xr-xr-x     0      0         0 20-Jan-2011 23:24 Yung Joc
+     381 dr-xr-xr-x     0      0         0  8-Oct-2012 16:07 Zimo
+  159812 dr-xr-xr-x     0      0         0  3-Jul-2011 14:02 Zune Temporary Music
+  224507 dr-xr-xr-x     0      0         0 19-Aug-2013 02:59 phone music
+   15406 -r--r--r--     0      0  15781051  7-Aug-2011 21:43 01.Alex Gaudino Fe. Kelly Rowland - What A Feeling(Extended Mix).mp3
+   15408 -r--r--r--     0      0  14873034  7-Aug-2011 21:43 02.Emily Osment - Lovesick(Ruffloaderz).mp3
+   15409 -r--r--r--     0      0  12143761  7-Aug-2011 21:43 03.Hurts - Better Than Love(Burns European Sex Vocal Mix).mp3
+   15410 -r--r--r--     0      0  14771679  7-Aug-2011 21:43 04.Keri Hilson - Pretty Girl Rock(Cahill Club).mp3
+   15411 -r--r--r--     0      0  20140365  7-Aug-2011 21:43 05.Kirsty Hawkshaw Vs Kinky Roland - Fine Day Reloaded(Max Sanna Remix).mp3
+   15412 -r--r--r--     0      0  10092626  7-Aug-2011 21:43 06.Lady Gaga - Born This Way(Salim & Sulaiman Remix).mp3
+   15413 -r--r--r--     0      0  14410273  3-Jun-2012 22:04 07.LMFAO - Party Rock Anthem(Audiobot Remix).mp3
+   15414 -r--r--r--     0      0  14263859  7-Aug-2011 21:43 08.Michael Jackson - Hollywood Tonight(DJ Chuckie Remix).mp3
+   15415 -r--r--r--     0      0  21503957  7-Aug-2011 21:43 09.Mory Kante Vs Loverush UK! - Yeke Yeke 2011(Solar Stone Deep & Throbbing Remix).mp3
+   15416 -r--r--r--     0      0  14842732  7-Aug-2011 21:43 10.Nightcrawlers Fe. Taio Cruz - Still Cryin(LMC Extended).mp3
+   15417 -r--r--r--     0      0  15335007  3-Oct-2011 17:12 11.Taio Cruz - Telling The World(Showstoppers Rio Extended DMC Mix).mp3
+   15418 -r--r--r--     0      0  16581443  7-Aug-2011 21:43 12.Timothy Allen Vs Loverush UK! Fe. Pryme & Simmons- Beat Of Zen(Timothy Allen Mix).mp3
+   15407 -r--r--r--     0      0   3124661 28-Oct-2011 18:36 1UP - Machine Gun (Zimo RMX).mp3
+   15407 -r--r--r--     0      0        26 28-Oct-2011 18:36 1UP - Machine Gun (Zimo RMX).mp3:Zone.Identifier
+   15420 -r--r--r--     0      0    105239  7-Aug-2011 21:42 BSBT.gif
+   15419 -r--r--r--     0      0   1335378  7-Aug-2011 21:43 Blackstarbt.net.mp3
+  163576 -r--r--r--     0      0     13638 16-Oct-2010 16:23 Folder.jpg
+    4505 -r--r--r--     0      0  44100124 21-Apr-2011 18:30 Just cant get enough-Black Eyed Peas (C@k3 HOUSE remix).wav
+    4505 -r--r--r--     0      0        24 21-Apr-2011 18:30 Just cant get enough-Black Eyed Peas (C@k3 HOUSE remix).wav:Zone.Identifier
+  163571 -r--r--r--     0      0  11137867 23-Oct-2012 16:45 Se7en.mp3
+     474 -r--r--r--     0      0       175 28-Apr-2011 20:04 Sick Tonight (Doctor P Remix).mp3
+     474 -r--r--r--     0      0        26 28-Apr-2011 20:04 Sick Tonight (Doctor P Remix).mp3:Zone.Identifier
+  228374 -r--r--r--     0      0     27136  3-Oct-2012 23:05 Thumbs.db
+  228374 -r--r--r--     0      0         0  3-Oct-2012 23:05 Thumbs.db:encryptable
+   15424 -r--r--r--     0      0      1995  7-Aug-2011 21:40 VA - DMC Dance Mixes 39 (2011)@320(BSBT-RG).txt
+   15421 -r--r--r--     0      0     17566  7-Aug-2011 21:40 djodm39.jpg
+   82558 -r--r--r--     0      0   9611015 23-Oct-2012 16:45 kennedyREMIX.mp3
+   15422 -r--r--r--     0      0  10227505 19-Aug-2013 03:20 kennedyREMIX2.mp3
+    3998 -r--r--r--     0      0   8966824 19-Aug-2013 03:20 song of darkness.mp3
+   13882 -r--r--r--     0      0      8785  7-Aug-2011 21:40 visit us at WWW.Blackstarbt.net.nfo
+
+dir_partition inode=161148
+   * HPFS - NTFS              0   1  1 60800 254 63  976768002
+     NTFS, blocksize=4096, 500 GB / 465 GiB
+Directory /Music/Podcasts
+  161148 dr-xr-xr-x     0      0         0 27-Jan-2011 00:57 .
+   90823 dr-xr-xr-x     0      0         0 19-Aug-2013 03:20 ..
+  161149 dr-xr-xr-x     0      0         0 13-Nov-2012 20:57 Hak5 - Technolust since 2005
+  161164 dr-xr-xr-x     0      0         0  4-Oct-2011 17:43 SecuraBit
+Directory /Music
+   90823 dr-xr-xr-x     0      0         0 19-Aug-2013 03:20 .
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 ..
+   11776 dr-xr-xr-x     0      0         0 19-Aug-2013 00:12 100 Top Techno Productions 2011 Deluxe Edition (2011) [WwW.ZoNaTorrent.CoM]
+   90381 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 2 Best Enemies
+  159896 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 2 Vibez
+  159901 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 3OH!3
+  160268 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 4 Strings
+   82683 dr-xr-xr-x     0      0         0 26-Jun-2011 03:30 A Perfect Circle
+  160278 dr-xr-xr-x     0      0         0 20-Jan-2011 22:21 Accuface
+  160324 dr-xr-xr-x     0      0         0 20-Jan-2011 22:22 Akon
+  160327 dr-xr-xr-x     0      0         0 20-Jan-2011 22:22 Al Storm
+  160330 dr-xr-xr-x     0      0         0 20-Jan-2011 22:22 Ali Payami Vs Aquagen Feat War
+  160259 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Andrew Spencer Vs. Lazard
+  160256 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Andrew Spencer meets Blue Natu
+  227909 dr-xr-xr-x     0      0         0  7-Jan-2012 10:10 Angelo
+  160262 dr-xr-xr-x     0      0         0 16-Jan-2012 15:10 Asking Alexandria
+  160347 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Aspyr Feat Jessica
+   82694 dr-xr-xr-x     0      0         0 26-Jun-2011 03:30 Avenged Sevenfold
+  160350 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Bangbros
+  160383 dr-xr-xr-x     0      0         0 20-Jan-2011 23:08 Basspolice
+   82710 dr-xr-xr-x     0      0         0 26-Jun-2011 03:31 Beardyman
+  160386 dr-xr-xr-x     0      0         0  3-Jul-2011 14:02 Benny Benassi
+  160431 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Blutonium Boy
+  160434 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Bonnie Tyler
+   82719 dr-xr-xr-x     0      0         0  9-Feb-2012 01:30 Brandon Sanderson and Robert Jordan
+  160443 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Brooklyn Bounce
+  160448 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Bruno Power
+   13883 dr-xr-xr-x     0      0         0 16-Jan-2012 15:04 Bullet for My Valentine
+  160477 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Cascada
+    4637 dr-xr-xr-x     0      0         0 19-Aug-2013 00:16 Chase and Status
+  160492 dr-xr-xr-x     0      0         0 16-Jan-2012 15:10 Chevelle
+    6859 dr-xr-xr-x     0      0         0 28-Aug-2011 16:07 Chevelle Discography
+   13886 dr-xr-xr-x     0      0         0 16-Jan-2012 15:04 Coheed & Cambria
+  160506 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Cosmic Dancer
+  160608 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Frankie Jones vs. Blue Amazon
+  160611 dr-xr-xr-x     0      0         0 26-Jun-2011 03:41 DJ Kramer
+  160619 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Lawless and Hypeman
+  160622 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Roberto K
+  160625 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Sequenza
+  160628 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Splash
+  160631 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Stardust
+  160634 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Steni
+   14007 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 DJ Tiësto
+  160644 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 DJ Yanny
+   81065 dr-xr-xr-x     0      0         0 17-Dec-2014 23:01 DRM Dumpster Folder
+  160509 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Da Tweekaz
+    7025 dr-xr-xr-x     0      0         0  2-Sep-2011 16:40 Da kennedy
+  160519 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dan Winter
+  160522 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Darren Styles vs Ultrabeat
+  160525 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dave Mccullen
+   13909 dr-xr-xr-x     0      0         0 16-Jan-2012 15:04 Deadmau5
+  160596 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dickheadz
+   13939 dr-xr-xr-x     0      0         0 16-Jan-2012 15:04 Disturbed
+  160605 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dj Cargo & D-Verse
+     471 dr-xr-xr-x     0      0         0  6-May-2011 11:55 Doctor P
+   14044 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Dope
+  160656 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dr. Dre
+  160672 dr-xr-xr-x     0      0         0 20-Jan-2011 23:09 Dream Dance Alliance
+  160675 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Drop Kickz
+   14053 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Drowning Pool
+  222078 dr-xr-xr-x     0      0         0 19-Aug-2013 03:36 Dubstep Soundcloud
+  160678 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Earthshakers
+   14082 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Eminem
+   14162 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Eminem-Recovery-(Retail)-2010-[NoFS]
+  160748 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Empyre One
+   15975 dr-xr-xr-x     0      0         0  9-Feb-2012 01:33 Enders Saga
+  160759 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 EuroDancer
+   14193 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Fair to Midland
+   82619 dr-xr-xr-x     0      0         0  7-Jan-2012 10:10 Feed Me
+  160771 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Feeldii and Kez
+   14217 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Godsmack
+  160774 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Grey T
+  160777 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Happytunez!
+   14258 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Hinder
+  160780 dr-xr-xr-x     0      0         0 20-Jan-2011 23:10 Impact & Resist Feat Lisa Abbo
+    6513 dr-xr-xr-x     0      0         0 27-Sep-2013 16:37 Infected Mushroom
+    6927 dr-xr-xr-x     0      0         0 19-Aug-2013 02:13 Infected Mushroom - Legend Of The Black Shawarma
+  160940 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Jan Van Bass
+  160962 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Jessi Fanuele
+  160972 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Jixaw Ft DJ Gigadance
+  160975 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Jumper
+   14270 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Justin Timberlake
+  161039 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 K-Traxx
+  161003 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 KLM Music
+  160978 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Kanye West
+  161000 dr-xr-xr-x     0      0         0 20-Jan-2011 23:11 Klimazz Viola Me
+  161006 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Klone
+   14283 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Korn
+   14348 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 LMFAO
+  161042 dr-xr-xr-x     0      0         0 16-Jan-2012 15:11 Lady Gaga
+   14338 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Lil Wayne
+  161064 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Liz Kay
+  161067 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Liz Meyer
+   14366 dr-xr-xr-x     0      0         0 16-Jan-2012 15:05 Ludacris
+  161090 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Manian
+  159973 dr-xr-xr-x     0      0         0 21-Jan-2011 00:21 Metallica
+   14389 dr-xr-xr-x     0      0         0 16-Jan-2012 15:06 Michael Jackson
+  161104 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Mike Nero
+  161107 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Miss Destiny
+    4501 dr-xr-xr-x     0      0         0  7-Jan-2012 10:10 Music
+  161111 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 MxPx
+  161114 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Natascha Thomas
+  161117 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 NiSsie Inc
+  161120 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Nitra-M
+  161123 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Northern Inc
+  161126 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Novaspace
+   15763 dr-xr-xr-x     0      0         0  5-Feb-2012 14:51 Onnyx
+  161129 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Orange Clubbers
+   14458 dr-xr-xr-x     0      0         0 16-Jan-2012 15:06 Ozzy Osbourne
+   14466 dr-xr-xr-x     0      0         0 16-Jan-2012 15:06 Papa Roach
+  161132 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Paul EP And Smithy
+  161135 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 PeaK Inc
+     559 dr-xr-xr-x     0      0         0 27-Aug-2013 04:01 Pendulum
+  161138 dr-xr-xr-x     0      0         0 20-Jan-2011 23:12 Platnum
+  159815 dr-xr-xr-x     0      0         0  2-Dec-2012 12:16 Playlists
+  161148 dr-xr-xr-x     0      0         0 27-Jan-2011 00:57 Podcasts
+  161170 dr-xr-xr-x     0      0         0 20-Jan-2011 23:18 Project Zero
+  159730 dr-xr-xr-x     0      0         0 21-Jan-2011 00:21 Puscifer
+  161176 dr-xr-xr-x     0      0         0 20-Jan-2011 23:18 Raveboy
+  161179 dr-xr-xr-x     0      0         0 20-Jan-2011 23:18 Revolution
+  161182 dr-xr-xr-x     0      0         0 26-Jun-2011 03:42 Robert Jordan
+    6933 dr-xr-xr-x     0      0         0 28-Aug-2011 16:15 Rosetta Stone German 1-5
+     352 dr-xr-xr-x     0      0         0  7-Jan-2012 10:10 Rusko
+  161476 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 SL-Tronic
+  161256 dr-xr-xr-x     0      0         0 20-Jan-2011 23:19 Secondtunez
+    6934 dr-xr-xr-x     0      0         0 19-Aug-2013 02:59 Serj Tankian - Elect The Dead
+    6784 dr-xr-xr-x     0      0         0 19-Aug-2013 00:13 Serj Tankian - Imperfect Harmonies [2010] [320kbps]
+    4650 dr-xr-xr-x     0      0         0 16-Jan-2012 15:11 Skrillex
+   14487 dr-xr-xr-x     0      0         0 16-Jan-2012 15:06 Skrillex - Scary Monsters and Nice Sprites [FLAC _ MP3]
+   14512 dr-xr-xr-x     0      0         0 16-Jan-2012 15:07 Slipknot
+   14601 dr-xr-xr-x     0      0         0 16-Jan-2012 15:07 Slipknot - 2010 - Greatest Hits
+  161479 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Soundtrack
+  161510 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Special D
+   14663 dr-xr-xr-x     0      0         0 16-Jan-2012 15:07 Staind
+  161526 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Star Pilots
+  161529 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Stu Allan Ft Vicky Fee
+  161532 dr-xr-xr-x     0      0         0 20-Jan-2011 23:20 Styles and Breeze
+  159807 dr-xr-xr-x     0      0         0 11-Jul-2011 21:45 Subscription
+   14760 dr-xr-xr-x     0      0         0 16-Jan-2012 15:07 Sum 41
+  161647 dr-xr-xr-x     0      0         0 20-Jan-2011 23:21 Sunrider
+  161650 dr-xr-xr-x     0      0         0 20-Jan-2011 23:21 Sy And Unknown Vs. Grant Pater
+  161653 dr-xr-xr-x     0      0         0 20-Jan-2011 23:21 Sylwania
+  161656 dr-xr-xr-x     0      0         0 20-Jan-2011 23:21 System F
+   14773 dr-xr-xr-x     0      0         0 16-Jan-2012 15:08 System of a Down
+  161841 dr-xr-xr-x     0      0         0 20-Jan-2011 23:22 Szhabbe
+   15112 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 Tech N9ne
+   82993 dr-xr-xr-x     0      0         0 16-Jan-2012 15:11 Tech N9ne - All 6's and 7's [2011] [Retail] 320kbps
+    4723 dr-xr-xr-x     0      0         0 19-Aug-2013 03:03 Tech N9ne Collabos - The Gates Mixed Plate [2010]
+  161922 dr-xr-xr-x     0      0         0 20-Jan-2011 23:22 Techno
+  162011 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Technoboy
+  162014 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Technoboy feat. Shayla
+  162017 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Teddybeer
+   15212 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 Tenacious D
+  162079 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 The All - American Rejects
+   15217 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 The Black Eyed Peas
+   15227 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 The Bloody Beetroots
+  162103 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 The Boyscouts
+  162106 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 The Hose
+    6797 dr-xr-xr-x     0      0         0  4-Sep-2011 18:49 The Matrix Soundtrack [First, Second & Third]
+   15248 dr-xr-xr-x     0      0         0 23-Oct-2012 16:46 This is Dubstep 2011
+  162115 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Thomas Veex & Kilazz
+   90824 dr-xr-xr-x     0      0         0 16-Nov-2010 12:13 Tool - Discography
+   85062 dr-xr-xr-x     0      0         0 28-Jun-2011 18:25 UKF Dubstep
+   15289 dr-xr-xr-x     0      0         0 11-Nov-2012 14:35 UKF_ Bass Culture
+  162145 dr-xr-xr-x     0      0         0 20-Jan-2011 23:23 Ultrabeat
+  159754 dr-xr-xr-x     0      0         0 16-Jan-2012 15:12 Unknown Artist
+    6848 dr-xr-xr-x     0      0         0 16-Jan-2012 15:12 VA - DMC Dance Mixes 39 (2011)@320(BSBT-RG)
+   15325 dr-xr-xr-x     0      0         0 16-Jan-2012 15:09 Various Artists
+  162252 dr-xr-xr-x     0      0         0 20-Jan-2011 23:24 Vids
+  162255 dr-xr-xr-x     0      0         0 20-Jan-2011 23:24 Wavetune
+   82639 dr-xr-xr-x     0      0         0 26-Jun-2011 03:30 Winamp MP3 Bundle
+  162278 dr-xr-xr-x     0      0         0 20-Jan-2011 23:24 Yung Joc
+     381 dr-xr-xr-x     0      0         0  8-Oct-2012 16:07 Zimo
+  159812 dr-xr-xr-x     0      0         0  3-Jul-2011 14:02 Zune Temporary Music
+  224507 dr-xr-xr-x     0      0         0 19-Aug-2013 02:59 phone music
+   15406 -r--r--r--     0      0  15781051  7-Aug-2011 21:43 01.Alex Gaudino Fe. Kelly Rowland - What A Feeling(Extended Mix).mp3
+   15408 -r--r--r--     0      0  14873034  7-Aug-2011 21:43 02.Emily Osment - Lovesick(Ruffloaderz).mp3
+   15409 -r--r--r--     0      0  12143761  7-Aug-2011 21:43 03.Hurts - Better Than Love(Burns European Sex Vocal Mix).mp3
+   15410 -r--r--r--     0      0  14771679  7-Aug-2011 21:43 04.Keri Hilson - Pretty Girl Rock(Cahill Club).mp3
+   15411 -r--r--r--     0      0  20140365  7-Aug-2011 21:43 05.Kirsty Hawkshaw Vs Kinky Roland - Fine Day Reloaded(Max Sanna Remix).mp3
+   15412 -r--r--r--     0      0  10092626  7-Aug-2011 21:43 06.Lady Gaga - Born This Way(Salim & Sulaiman Remix).mp3
+   15413 -r--r--r--     0      0  14410273  3-Jun-2012 22:04 07.LMFAO - Party Rock Anthem(Audiobot Remix).mp3
+   15414 -r--r--r--     0      0  14263859  7-Aug-2011 21:43 08.Michael Jackson - Hollywood Tonight(DJ Chuckie Remix).mp3
+   15415 -r--r--r--     0      0  21503957  7-Aug-2011 21:43 09.Mory Kante Vs Loverush UK! - Yeke Yeke 2011(Solar Stone Deep & Throbbing Remix).mp3
+   15416 -r--r--r--     0      0  14842732  7-Aug-2011 21:43 10.Nightcrawlers Fe. Taio Cruz - Still Cryin(LMC Extended).mp3
+   15417 -r--r--r--     0      0  15335007  3-Oct-2011 17:12 11.Taio Cruz - Telling The World(Showstoppers Rio Extended DMC Mix).mp3
+   15418 -r--r--r--     0      0  16581443  7-Aug-2011 21:43 12.Timothy Allen Vs Loverush UK! Fe. Pryme & Simmons- Beat Of Zen(Timothy Allen Mix).mp3
+   15407 -r--r--r--     0      0   3124661 28-Oct-2011 18:36 1UP - Machine Gun (Zimo RMX).mp3
+   15407 -r--r--r--     0      0        26 28-Oct-2011 18:36 1UP - Machine Gun (Zimo RMX).mp3:Zone.Identifier
+   15420 -r--r--r--     0      0    105239  7-Aug-2011 21:42 BSBT.gif
+   15419 -r--r--r--     0      0   1335378  7-Aug-2011 21:43 Blackstarbt.net.mp3
+  163576 -r--r--r--     0      0     13638 16-Oct-2010 16:23 Folder.jpg
+    4505 -r--r--r--     0      0  44100124 21-Apr-2011 18:30 Just cant get enough-Black Eyed Peas (C@k3 HOUSE remix).wav
+    4505 -r--r--r--     0      0        24 21-Apr-2011 18:30 Just cant get enough-Black Eyed Peas (C@k3 HOUSE remix).wav:Zone.Identifier
+  163571 -r--r--r--     0      0  11137867 23-Oct-2012 16:45 Se7en.mp3
+     474 -r--r--r--     0      0       175 28-Apr-2011 20:04 Sick Tonight (Doctor P Remix).mp3
+     474 -r--r--r--     0      0        26 28-Apr-2011 20:04 Sick Tonight (Doctor P Remix).mp3:Zone.Identifier
+  228374 -r--r--r--     0      0     27136  3-Oct-2012 23:05 Thumbs.db
+  228374 -r--r--r--     0      0         0  3-Oct-2012 23:05 Thumbs.db:encryptable
+   15424 -r--r--r--     0      0      1995  7-Aug-2011 21:40 VA - DMC Dance Mixes 39 (2011)@320(BSBT-RG).txt
+   15421 -r--r--r--     0      0     17566  7-Aug-2011 21:40 djodm39.jpg
+   82558 -r--r--r--     0      0   9611015 23-Oct-2012 16:45 kennedyREMIX.mp3
+   15422 -r--r--r--     0      0  10227505 19-Aug-2013 03:20 kennedyREMIX2.mp3
+    3998 -r--r--r--     0      0   8966824 19-Aug-2013 03:20 song of darkness.mp3
+   13882 -r--r--r--     0      0      8785  7-Aug-2011 21:40 visit us at WWW.Blackstarbt.net.nfo
+Directory /
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 .
+       5 dr-xr-xr-x     0      0         0  5-Jun-2019 21:06 ..
+   82628 dr-xr-xr-x     0      0         0 24-Jun-2011 12:11 $AVG
+      37 dr-xr-xr-x     0      0         0  5-Jun-2019 21:07 $RECYCLE.BIN
+   20487 dr-xr-xr-x     0      0         0  2-Mar-2013 19:21 .Trash-1000
+  159583 dr-xr-xr-x     0      0         0  2-Mar-2012 20:39 10_1_10 LAN Party
+    6473 dr-xr-xr-x     0      0         0 25-Aug-2010 14:04 6acecaa05f35f6819e6a94
+   97913 dr-xr-xr-x     0      0         0 28-Jul-2016 02:20 8f2794f695b1d46591a617e4787605d0
+   90513 dr-xr-xr-x     0      0         0  2-Mar-2012 20:39 AgentSheets
+  167462 dr-xr-xr-x     0      0         0 13-Jan-2014 18:17 Backups
+    4661 dr-xr-xr-x     0      0         0 29-Mar-2012 13:49 Development
+    7491 dr-xr-xr-x     0      0         0 17-Nov-2011 22:26 Digidesign Databases
+    7041 dr-xr-xr-x     0      0         0  9-Feb-2013 21:31 Downloads
+  167122 dr-xr-xr-x     0      0         0 19-Feb-2011 22:45 Drivers
+     327 dr-xr-xr-x     0      0         0  8-Dec-2015 20:53 FL8
+      40 dr-xr-xr-x     0      0         0 16-May-2012 18:00 Game
+   11886 dr-xr-xr-x     0      0         0  7-Dec-2015 22:52 Games
+     359 dr-xr-xr-x     0      0         0 12-Jan-2011 16:54 Home Videos
+     328 dr-xr-xr-x     0      0         0 11-May-2013 03:02 Movies
+   90823 dr-xr-xr-x     0      0         0 19-Aug-2013 03:20 Music
+     307 dr-xr-xr-x     0      0         0  7-Dec-2015 22:46 Programs
+    6531 dr-xr-xr-x     0      0         0 12-Sep-2010 21:05 RECYCLER
+   90788 dr-xr-xr-x     0      0         0  3-Feb-2012 19:56 RPG
+      35 dr-xr-xr-x     0      0         0  5-Jun-2019 20:59 System Volume Information
+   22734 dr-xr-xr-x     0      0         0 28-Dec-2012 18:13 Temp
+   90808 dr-xr-xr-x     0      0         0  7-Jan-2012 10:11 Videos
+  223735 dr-xr-xr-x     0      0         0 18-Aug-2011 10:18 msdownld.tmp
+     351 -r--r--r--     0      0       989  3-Oct-2011 22:29 Darthvader.png
+     351 -r--r--r--     0      0        26  3-Oct-2011 22:29 Darthvader.png:Zone.Identifier
+   90410 -r--r--r--     0      0       700 15-Jan-2012 00:40 Development - Shortcut.lnk
+    4011 -r--r--r--     0      0   4199240 11-May-2012 22:33 MotioninJoy_071001_signed.exe
+    4011 -r--r--r--     0      0        26 11-May-2012 22:33 MotioninJoy_071001_signed.exe:Zone.Identifier
+   15762 -r--r--r--     0      0     46080 11-Apr-2012 15:05 Thumbs.db
+   15762 -r--r--r--     0      0         0 11-Apr-2012 15:05 Thumbs.db:encryptable
+   90754 -r--r--r--     0      0    602447 25-Oct-2010 11:46 UM-2_win_vista.zip
+   90754 -r--r--r--     0      0        24 25-Oct-2010 11:46 UM-2_win_vista.zip:Zone.Identifier
+    4715 -r--r--r--     0      0      2720 12-Jul-2010 20:48 UserPreferences.ini
+    4716 -r--r--r--     0      0     16091 12-Jul-2010 20:48 ddo.keymap
+  159733 -r--r--r--     0      0   1348608 16-Dec-2010 02:42 ehthumbs_vista.db
+  159733 -r--r--r--     0      0         0 16-Dec-2010 02:42 ehthumbs_vista.db:encryptable
+   90756 -r--r--r--     0      0   3375944 13-Oct-2010 13:38 en_windows_phone_developer_tools.exe
+   90756 -r--r--r--     0      0        24 13-Oct-2010 13:38 en_windows_phone_developer_tools.exe:Zone.Identifier
+  160034 -r--r--r--     0      0  13166186 16-Jan-2011 16:19 lowMailbox.ase
+   20357 -r--r--r--     0      0    904704  1-Dec-2006 23:37 msdia80.dll
+   90366 -r--r--r--     0      0     21791 10-Oct-2010 05:22 pPipeShape1.ase
+  160048 -r--r--r--     0      0    359613 16-Jan-2011 18:52 pSphere1Shape.ase
+   90367 -r--r--r--     0      0     21789 10-Oct-2010 05:22 ramp90plus.ase
+   15809 -r--r--r--     0      0     69632 18-Mar-2012 23:30 t670
+
+interface_write()
+ 1 * HPFS - NTFS              0   1  1 60800 254 63  976768002
+simulate write!
+
+write_mbr_i386: starting...
+write_all_log_i386: starting...
+No extended partition
+
+TestDisk exited normally.
