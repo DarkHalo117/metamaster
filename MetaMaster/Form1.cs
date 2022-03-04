@@ -1711,7 +1711,7 @@ namespace MetaMaster
             string executionCMD = logic.tools + "\\" + applicationDir + "\\Win_10_DISM_clean.cmd";
             System.Diagnostics.Process.Start(executionCMD);
             systemGridView.Rows.Add("Task:");
-            systemGridView.Rows.Add(applicationName, executionCMD, logic.timestamp());
+            systemGridView.Rows.Add(applicationName + "\\Win_10_DISM_clean.cmd", executionCMD, logic.timestamp());
             toolStripStatusLabel1.Text = "Launching: Win_10_DISM_clean.cmd";
             statusStrip1.Update();
         }

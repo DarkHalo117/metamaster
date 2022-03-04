@@ -284,11 +284,16 @@ namespace MetaMaster
                                 break;
                             case 4:
                                 Console.WriteLine("Payload:4:everest");
-                                apiController.cURLrequest += "\"call\":\"getOrder\",\"arg1\":";
-                                ShowInputDialog(ref record_id, "SO#");
+                                //apiController.cURLrequest += "\"format_data\":\"edn\",";
+                                /*
+                                apiController.cURLrequest += "\"call\":\"getCustomerByPhone\",\"arg1\":\"";
+                                ShowInputDialog(ref record_id, "PH#");
                                 apiController.cURLrequest += record_id;
-                                apiController.cURLrequest += ",\"arg2\":true";
-                                //apiController.cURLrequest += "}";
+                                */
+                                apiController.cURLrequest += "\"call\":\"getOrdersByCustomerId\",\"arg1\":\"";
+                                ShowInputDialog(ref record_id, "ID#");
+                                apiController.cURLrequest += record_id;
+                                apiController.cURLrequest += "\",\"arg2\":10";
                                 apiController.messageConstructed = true; //Message Constructed
                                 break;
                             default:
